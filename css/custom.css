@@ -1,0 +1,14 @@
+
+body {
+    color: white;
+}
+
+.bg-gray-700 {
+  background-color: #495057;
+}
+.bg-gray-800 {
+  background-color: #343a40;
+}
+.bg-gray-900 {
+  background-color: #212529;
+}
