@@ -1,21 +1,27 @@
 
 $(document).ready(function() {
   var fixHeight = function() {
+    console.log(document.documentElement.clientHeight)
     $('.navbar-nav').css(
       'max-height',
       document.documentElement.clientHeight - 150
     );
   };
+
   fixHeight();
+
   $(window).resize(function() {
     fixHeight();
   });
+
   $('.navbar .nav-icon-toggler').on('click', function() {
     fixHeight();
   });
+
   $('.nav-icon-toggler, .overlay').on('click', function() {
     $('.mobileMenu, .overlay, .nav-icon-toggler').toggleClass('open');
   });
+
 });
 
 
